@@ -8,12 +8,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grouchy.HttpApi.Client.Testing", "src\Grouchy.HttpApi.Client.Testing\Grouchy.HttpApi.Client.Testing.csproj", "{A3AD7B99-C7B9-4DEE-AB37-019C736E5FE0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{52B73FF5-93B7-43CA-9DEA-D1D7A8862E09}"
-	ProjectSection(SolutionItems) = preProject
-		LICENSE = LICENSE
-		appveyor.yml = appveyor.yml
-		.gitignore = .gitignore
-		.gitattributes = .gitattributes
-	EndProjectSection
+ProjectSection(SolutionItems) = preProject
+	.gitignore = .gitignore
+	.gitattributes = .gitattributes
+	appveyor.yml = appveyor.yml
+	LICENSE = LICENSE
+	README.md = README.md
+EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grouchy.HttpApi.Client.Testing.Tests", "src\Grouchy.HttpApi.Client.Testing.Tests\Grouchy.HttpApi.Client.Testing.Tests.csproj", "{F29D2EC5-9BAE-42F8-8C5A-287AF9267AD3}"
 EndProject
