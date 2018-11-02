@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net451;netstandard2.0</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <!--<TargetFrameworks>net451;netstandard2.0</TargetFrameworks>-->
     <Product>Grouchy.HttpApi.Client.Testing</Product>
     <Title>Grouchy.HttpApi.Client.Testing</Title>
     <Description>HTTP API mocking library</Description>
@@ -18,13 +19,13 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>git://github.com/grouchy-tools/grouchy.httpapi.client.testing</RepositoryUrl>
   </PropertyGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'net451'">
-    <Reference Include="System" />
-    <Reference Include="System.Net.Http" />
-  </ItemGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'net451'">
-    <PackageReference Include="Microsoft.Owin.Testing" Version="3.0.1" />
-  </ItemGroup>
+  <!--<ItemGroup Condition="'$(TargetFramework)' == 'net451'">-->
+    <!--<Reference Include="System" />-->
+    <!--<Reference Include="System.Net.Http" />-->
+  <!--</ItemGroup>-->
+  <!--<ItemGroup Condition="'$(TargetFramework)' == 'net451'">-->
+    <!--<PackageReference Include="Microsoft.Owin.Testing" Version="3.0.1" />-->
+  <!--</ItemGroup>-->
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
     <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="2.1.3" />
