@@ -15,6 +15,18 @@ namespace Grouchy.HttpApi.Client.Testing.Tests
    public class handle_request_with_stub_http_api
    {
       [Test]
+      public void return_status_code_not_found_for_unhandled_route()
+      {
+         using (var webApi = new PingHttpApi())
+         using (var httpClient = new HttpClient { BaseAddress = webApi.BaseUri })
+         {
+            var response = httpClient.GetAsync("/unhandled").Result;
+
+            response.StatusCode.ShouldBe(HttpStatusCode.NotFound);
+         }
+      }
+      
+      [Test]
       public async Task simple_get_request()
       {
          using (var webApi = new PingHttpApi())
