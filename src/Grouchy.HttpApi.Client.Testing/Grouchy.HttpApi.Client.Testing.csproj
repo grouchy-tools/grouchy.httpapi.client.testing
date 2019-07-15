@@ -33,6 +33,6 @@
     <PackageReference Include="System.Net.Http" Version="4.3.3" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Grouchy.HttpApi.Client.Abstractions" Version="0.0.1-preview0007" />
+    <PackageReference Include="Grouchy.HttpApi.Client.Abstractions" Version="0.0.1-preview0010" />
   </ItemGroup>
 </Project>
